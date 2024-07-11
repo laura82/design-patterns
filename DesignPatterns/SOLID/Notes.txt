@@ -1,0 +1,25 @@
+﻿SOLID:
+
+S - Single Responsibility Principle
+	"An object should only have one reason to change" i.e. it should only have one responsibility - one thing to do.
+	Benefits: improved readability, easier debugging/testing, better maintainability.
+
+O - Open Closed Principle
+	"Open for extension, closed for modification".
+	Bade code is here you need to modify a method any time something changes (e.g. a new type of discount is added).
+	Benefits: can add new functionality without having to change (and potentially break) the existing code.
+
+L - Liskov Substitution Principle
+	"Objects of a derived class should be able to replace objects of the base class without affecting the correctness of the program".
+	This ensures the inheritance hierarchy is correctly designed and implemented and allows the architecture to be flexible.
+	Benefits: helps prevent model hierarchies that violate the open closed principle - any inheritance model that follows the Liskov Substitution Principle will implicitly adhere to the Open Closed Principle.
+
+I - Interface Segregation Principle
+	"No client should be fored to depend on interfaces they don't use".
+	This is only achievable if your interfaces fit a specfic client or task so we split them down into multiple, independent parts.
+	Benefits: reduces the side effects and frequency of required changes.
+
+D - Dependency Inversion Principle
+	"A high-level class must not depend upon a lower-level class. They must both depend upon abstractions".
+	We use interfaces to allow this. This means that the code is easy to maintain and expand.
+	Benefits: decouples high level and low level classes and makes it easier to change low level classes without affecting the high level classes.
