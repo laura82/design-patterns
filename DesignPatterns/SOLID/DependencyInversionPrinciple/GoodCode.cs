@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SOLID.DependencyInversionPrinciple
+﻿namespace SOLID.DependencyInversionPrinciple
 {
     // Here we use an ISalaryCalculator interface to allow decoupling between the SalaryCalculator and StaffRecord classes.
     // The staff record class no longer directly depends on the salary calculator.
